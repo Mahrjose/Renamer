@@ -294,7 +294,7 @@ def rename(file_episode_count_tuple):
                 new_name = f"Episode {count:0>2d} - {name_string}{extension}"
                 count += 1
 
-                # file.rename(Path(directory, new_name))
+                file.rename(Path(directory, new_name))
 
         print("____________________________________________________".center(col))
         print("||                                                ||".center(col))
