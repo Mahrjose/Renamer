@@ -279,7 +279,8 @@ def mainMenuResponse(option):
         )
         file_title = input("Title of the file(s): ")
         print("")
-        sl = 1
+        
+        sl = int(input("Enter the Staring Serial no. : "))
 
         for file in general_files.iterdir():
             if file.is_file() and file.suffix != ".ini":
